@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(UMC\ 뭔가\ 간지나는\ 배경1\ 2.svg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.main-center {
+  justify-items: center;
+  align-items: center;
+  width: 700px;
+  height: 500px;
+  background-color: silver;
+  border-radius: 15px;
+  opacity: 0.5;
+  flex-direction: column;
+  margin: 250px auto;
+}
+
+.title{
+  font-size: 54px;
+  padding: 40px 50px 10px 50px;
+  text-align: center;
+  font-weight: 700;
+  opacity: 1;
+}
+
+hr {
+  width: 450px;
+  height: 2px;
+  background-color: white;
+  margin: 0px auto;
+}
+
+.center form {
+  padding: 0px 40px;
+  box-sizing: border-box;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+form .text_field {
+  border-bottom: 2px solid white;
+  margin: 30px 25%;
+  align-self: flex-start;
+  display: grid;
+}
+
+.text_field input {
+  width: 100%;
+  padding: 5px 5px;
+  height: 20px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.text_field input::placeholder {
+  left: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  width: 50%;
+  margin: 0 0 0 25%;
+  height: 70px;
+  background: #323232;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  outline: none;
+}
+
+ul {
+  display: table;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+  justify-content: space-between;
+}
+li {
+  float: left;
+  margin-right: 25px;
+  font-size: 19px;
+}
+li:first-child:after {
+  content: " | ";
+}
