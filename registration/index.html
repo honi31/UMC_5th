@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 화면</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./main.js"></script>
+</head>
+<body>
+    <main>
+      <h2>회원가입</h2>
+      <hr>
+      <fieldset>
+        <label for="username">이름</label>
+        <input type="text" id="username" name="username" />
+      </fieldset>
+    
+      <div class="success-un hide">멋진 이름이군요</div>
+      <div class="failure-un hide">필수 입력 사항입니다.</div>
+    
+      <fieldset>
+        <label for="nickname">닉네임</label>
+        <input type="text" id="nickname" name="nickname" />
+      </fieldset>
+
+      <div class="success-nn hide">멋진 닉네임이군요</div>
+      <div class="failure-nn hide">닉네임은 2~5글자로 구성해주세요.</div>
+
+      <fieldset>
+        <label for="email">이메일</label>
+        <input type="text" id="email" name="email" />
+      </fieldset>
+    
+      <div class="success-em hide">올바른 메일 형식입니다.</div>
+      <div class="failure-em hide">올바른 메일 형식이 아닙니다.</div>
+    
+      <fieldset>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" />
+      </fieldset>
+
+      <div class="success-pw hide">안전한 비밀번호입니다.</div>
+      <div class="failure-pw hide">영어+숫자+특수문자를 조합하여 작성해주세요.</div>
+      
+      <fieldset>
+        <label for="password2">비밀번호 확인</label>
+        <input type="password" id="password2" name="password2" />
+      </fieldset>
+
+      <div class="success-pw2 hide">비밀번호가 일치합니다.</div>
+      <div class="failure-pw2 hide">비밀번호가 일치하지 않습니다.</div>
+
+      <fieldset>
+        <button id="open">회원가입</button>
+      </fieldset>
+      <div class="container" style="display: none;">
+        <div class="modal">
+          <div class="title">회원가입 성공</div>
+          <p>umc챌린저 가입을 축하합니다!!</p>
+          <div class="close-modal">
+            <button id="close">닫기</button>
+          </div>
+        </div>
+    </main>
+    </body>
+</body>
+</html>
